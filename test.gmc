@@ -1,0 +1,69 @@
+{
+    "classes": [
+        {
+            "name": "class\u0000",
+            "symptoms": [
+                {
+                    "feature": "feature\u0000"
+                },
+                {
+                    "feature": "feature\u0002"
+                }
+            ]
+        },
+        {
+            "name": "class\u0001",
+            "symptoms": [
+                {
+                    "feature": "feature\u0001"
+                }
+            ]
+        },
+        {
+            "name": "class\u0002",
+            "symptoms": [
+            ]
+        }
+    ],
+    "features": [
+        {
+            "name": "feature\u0000",
+            "normal_values": [
+                0,
+                1,
+                2
+            ],
+            "values": [
+                0,
+                1,
+                2
+            ]
+        },
+        {
+            "name": "feature\u0001",
+            "normal_values": [
+                0,
+                1,
+                2
+            ],
+            "values": [
+                0,
+                1,
+                2
+            ]
+        },
+        {
+            "name": "feature\u0002",
+            "normal_values": [
+                0,
+                1,
+                2
+            ],
+            "values": [
+                0,
+                1,
+                2
+            ]
+        }
+    ]
+}

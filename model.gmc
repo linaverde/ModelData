@@ -1,0 +1,72 @@
+{
+    "classes": [
+        {
+            "name": "class0",
+            "symptoms": [
+                {
+                    "feature": "feature0",
+                    "periods": [
+                        {
+                            "durationMax": 12,
+                            "durationMin": 4,
+                            "values": [
+                                0
+                            ]
+                        },
+                        {
+                            "durationMax": 19,
+                            "durationMin": 16,
+                            "values": [
+                                1
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "feature": "feature1",
+                    "periods": [
+                        {
+                            "durationMax": 9,
+                            "durationMin": 2,
+                            "values": [
+                                1
+                            ]
+                        },
+                        {
+                            "durationMax": 12,
+                            "durationMin": 11,
+                            "values": [
+                                2
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "features": [
+        {
+            "name": "feature0",
+            "normal_values": [
+                0
+            ],
+            "values": [
+                0,
+                1,
+                2
+            ]
+        },
+        {
+            "name": "feature1",
+            "normal_values": [
+                0,
+                1
+            ],
+            "values": [
+                0,
+                1,
+                2
+            ]
+        }
+    ]
+}
