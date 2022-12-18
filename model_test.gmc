@@ -1,0 +1,347 @@
+{
+    "classes": [
+        {
+            "name": "class0",
+            "symptoms": [
+                {
+                    "feature": "feature0",
+                    "periods": [
+                        {
+                            "durationMax": 19,
+                            "durationMin": 16,
+                            "values": [
+                                2,
+                                3
+                            ]
+                        },
+                        {
+                            "durationMax": 16,
+                            "durationMin": 8,
+                            "values": [
+                                0,
+                                1
+                            ]
+                        },
+                        {
+                            "durationMax": 3,
+                            "durationMin": 2,
+                            "values": [
+                                4,
+                                3
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "feature": "feature1",
+                    "periods": [
+                        {
+                            "durationMax": 8,
+                            "durationMin": 7,
+                            "values": [
+                                0,
+                                3
+                            ]
+                        },
+                        {
+                            "durationMax": 14,
+                            "durationMin": 10,
+                            "values": [
+                                4,
+                                2
+                            ]
+                        },
+                        {
+                            "durationMax": 9,
+                            "durationMin": 2,
+                            "values": [
+                                0,
+                                3
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "feature": "feature2",
+                    "periods": [
+                        {
+                            "durationMax": 8,
+                            "durationMin": 1,
+                            "values": [
+                                2,
+                                3
+                            ]
+                        },
+                        {
+                            "durationMax": 7,
+                            "durationMin": 3,
+                            "values": [
+                                5,
+                                4
+                            ]
+                        },
+                        {
+                            "durationMax": 19,
+                            "durationMin": 11,
+                            "values": [
+                                3,
+                                2
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "feature": "feature3",
+                    "periods": [
+                        {
+                            "durationMax": 14,
+                            "durationMin": 7,
+                            "values": [
+                                0,
+                                1
+                            ]
+                        },
+                        {
+                            "durationMax": 13,
+                            "durationMin": 6,
+                            "values": [
+                                3,
+                                2
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "feature": "feature4",
+                    "periods": [
+                        {
+                            "durationMax": 11,
+                            "durationMin": 5,
+                            "values": [
+                                2,
+                                3
+                            ]
+                        },
+                        {
+                            "durationMax": 14,
+                            "durationMin": 8,
+                            "values": [
+                                5,
+                                4
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "class1",
+            "symptoms": [
+                {
+                    "feature": "feature0",
+                    "periods": [
+                        {
+                            "durationMax": 15,
+                            "durationMin": 13,
+                            "values": [
+                                4,
+                                3
+                            ]
+                        },
+                        {
+                            "durationMax": 16,
+                            "durationMin": 15,
+                            "values": [
+                                2,
+                                0
+                            ]
+                        },
+                        {
+                            "durationMax": 18,
+                            "durationMin": 7,
+                            "values": [
+                                4,
+                                3
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "feature": "feature1",
+                    "periods": [
+                        {
+                            "durationMax": 16,
+                            "durationMin": 13,
+                            "values": [
+                                2,
+                                0
+                            ]
+                        },
+                        {
+                            "durationMax": 20,
+                            "durationMin": 18,
+                            "values": [
+                                3,
+                                4
+                            ]
+                        },
+                        {
+                            "durationMax": 18,
+                            "durationMin": 7,
+                            "values": [
+                                0,
+                                1
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "feature": "feature2",
+                    "periods": [
+                        {
+                            "durationMax": 2,
+                            "durationMin": 1,
+                            "values": [
+                                4,
+                                3
+                            ]
+                        },
+                        {
+                            "durationMax": 13,
+                            "durationMin": 13,
+                            "values": [
+                                1,
+                                0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "feature": "feature3",
+                    "periods": [
+                        {
+                            "durationMax": 6,
+                            "durationMin": 5,
+                            "values": [
+                                3,
+                                0
+                            ]
+                        },
+                        {
+                            "durationMax": 11,
+                            "durationMin": 11,
+                            "values": [
+                                2,
+                                4
+                            ]
+                        },
+                        {
+                            "durationMax": 4,
+                            "durationMin": 3,
+                            "values": [
+                                1,
+                                3
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "feature": "feature4",
+                    "periods": [
+                        {
+                            "durationMax": 7,
+                            "durationMin": 4,
+                            "values": [
+                                0,
+                                3
+                            ]
+                        },
+                        {
+                            "durationMax": 18,
+                            "durationMin": 15,
+                            "values": [
+                                2,
+                                4
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "features": [
+        {
+            "name": "feature0",
+            "normal_values": [
+                0,
+                1
+            ],
+            "values": [
+                0,
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "name": "feature1",
+            "normal_values": [
+                0,
+                1
+            ],
+            "values": [
+                0,
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "name": "feature2",
+            "normal_values": [
+                0,
+                1
+            ],
+            "values": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        },
+        {
+            "name": "feature3",
+            "normal_values": [
+                0,
+                1
+            ],
+            "values": [
+                0,
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "name": "feature4",
+            "normal_values": [
+                0,
+                1,
+                2
+            ],
+            "values": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        }
+    ]
+}

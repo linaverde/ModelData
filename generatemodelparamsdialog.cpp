@@ -16,6 +16,11 @@ GenerateModelParamsDialog::GenerateModelParamsDialog(QWidget *parent) :
 {
     ui->setupUi(this);
     connect(ui->btnGen, SIGNAL(clicked()), this, SLOT(generateModel()));
+    connect(ui->spinBoxFeatureValuesCountMin, SIGNAL(valueChanged()), this, SLOT(onMinFeatureValuesCountChanged()));
+    connect(ui->spinBoxFeatureValuesCountMinNormal, SIGNAL(valueChanged()), this, SLOT(onMinFeatureNormalValuesCountChanged()));
+    connect(ui->spinBoxPeriodsCountMin, SIGNAL(valueChanged()), this, SLOT(onNimPeriodsCountChanged()));
+    connect(ui->spinBoxPeriodTimeMin, SIGNAL(valueChanged()), this, SLOT(onMinPerionDurationChanged()));
+    connect(ui->spinBoxFeatureValuesCountForPeriodMin, SIGNAL(valueChanged()), this, SLOT(onMinValuesPerPeriodsChanged()));
 }
 
 GenerateModelParamsDialog::~GenerateModelParamsDialog()
@@ -99,14 +104,14 @@ void GenerateModelParamsDialog::generateModel(){
                 QJsonArray previousPeriodValues;
                 if(p > 0){
                     previousPeriodValues = periods.at(p-1).toObject().value("values").toArray();
-                    if (maxValuesPerPeriodCount-previousPeriodValues.size() < minValuesPerPeriodCount){
+                    if (possibleValues.size()-previousPeriodValues.size() < minValuesPerPeriodCount){
                         QMessageBox messageBox;
                         messageBox.critical(0,"Ошибка","Невозможно сгенерировать модель");
                         messageBox.setFixedSize(500,200);
                         messageBox.show();
                         return;
                     } else {
-                        valuesPerPeriodCount = std::min(valuesPerPeriodCount, maxValuesPerPeriodCount-previousPeriodValues.size());
+                        valuesPerPeriodCount = std::min(valuesPerPeriodCount, possibleValues.size()-previousPeriodValues.size());
                     }
                 }
                 while(values.count() < valuesPerPeriodCount){
@@ -147,4 +152,24 @@ void GenerateModelParamsDialog::generateModel(){
     jsonFile.write(QJsonDocument(schema).toJson(QJsonDocument::Indented));
     jsonFile.close();   // Закрываем файл
 
+}
+
+void GenerateModelParamsDialog::onMinFeatureValuesCountChanged(){
+    ui->spinBoxFeatureValuesCountMax->setMinimum(ui->spinBoxFeatureValuesCountMin->value());
+}
+
+void GenerateModelParamsDialog::onMinFeatureNormalValuesCountChanged(){
+    ui->spinBoxFeatureValuesCountMaxNormal->setMinimum(ui->spinBoxFeatureValuesCountMinNormal->value());
+}
+
+void GenerateModelParamsDialog::onNimPeriodsCountChanged(){
+    ui->spinBoxPeriodsCountMax->setMinimum(ui->spinBoxPeriodsCountMin->value());
+}
+
+void GenerateModelParamsDialog::onMinPerionDurationChanged(){
+    ui->spinBoxPeriodTimeMax->setMinimum(ui->spinBoxPeriodTimeMin->value());
+}
+
+void GenerateModelParamsDialog::onMinValuesPerPeriodsChanged(){
+    ui->spinBoxFeatureValuesCountForPeriodMax->setMinimum(ui->spinBoxFeatureValuesCountForPeriodMin->value());
 }

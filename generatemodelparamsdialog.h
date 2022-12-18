@@ -20,6 +20,11 @@ private:
 
 private Q_SLOTS:
     void generateModel();
+    void onMinFeatureValuesCountChanged();
+    void onMinFeatureNormalValuesCountChanged();
+    void onNimPeriodsCountChanged();
+    void onMinPerionDurationChanged();
+    void onMinValuesPerPeriodsChanged();
 };
 
 #endif // GENERATEMODELPARAMSDIALOG_H
