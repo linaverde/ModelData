@@ -9,17 +9,25 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    generatedatadialog.cpp \
     generatemodelparamsdialog.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    qjsontablemodel.cpp \
+    restoremodeldialog.cpp
 
 HEADERS += \
+    generatedatadialog.h \
     generatemodelparamsdialog.h \
-    mainwindow.h
+    mainwindow.h \
+    qjsontablemodel.h \
+    restoremodeldialog.h
 
 FORMS += \
+    generatedatadialog.ui \
     generatemodelparamsdialog.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    restoremodeldialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

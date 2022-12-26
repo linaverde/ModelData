@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GenerateDataDialog</class>
+ <widget class="QDialog" name="GenerateDataDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1656</width>
+    <height>999</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Генерация данных</string>
+  </property>
+  <widget class="QPushButton" name="btnGen">
+   <property name="geometry">
+    <rect>
+     <x>1490</x>
+     <y>30</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Сгенерировать</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSave">
+   <property name="geometry">
+    <rect>
+     <x>1480</x>
+     <y>950</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Сохранить выборку</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnOpenFile">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Открыть файл</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelOpenedFile">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>30</y>
+     <width>591</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Файл модели данных пока не выбран</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="minValuesPerClassCountSpinBox">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>70</y>
+     <width>101</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+   <property name="maximum">
+    <number>10001</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="minValuesPerClassCountLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>70</y>
+     <width>261</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Мин. кол-во экземляров одного класса</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableGeneratedDatabase">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>150</y>
+     <width>521</width>
+     <height>781</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="maxValuesPerClassCountSpinBox">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>100</y>
+     <width>101</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+   <property name="maximum">
+    <number>10001</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="maxValuesPerClassCountLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>211</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Макс.  кол-во экземляров одного класса</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableModelClasses">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>150</y>
+     <width>581</width>
+     <height>781</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableModelFeatures">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>150</y>
+     <width>321</width>
+     <height>781</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

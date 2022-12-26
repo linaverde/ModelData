@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "generatemodelparamsdialog.h"
+#include "generatedatadialog.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -8,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     connect(ui->btnModelGen, SIGNAL(clicked()), this, SLOT(onModelGenClicked()));
+    connect(ui->btnDataGen, SIGNAL(clicked()), this, SLOT(onDatabaseGenClicked()));
 }
 
 MainWindow::~MainWindow()
@@ -18,4 +20,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::onModelGenClicked(){
     (new GenerateModelParamsDialog(this))->exec();
+}
+
+void MainWindow::onDatabaseGenClicked(){
+    (new GenerateDataDialog(this))->exec();
 }
