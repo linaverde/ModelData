@@ -17,6 +17,12 @@ public:
 
 private:
     Ui::RestoreModelDialog *ui;
+    void generateAlternatives(QJsonDocument &doc);
+    void mergeAlternatives();
+    QJsonArray generateObservationsAlternatives(QJsonArray observations);
+
+private Q_SLOTS:
+    void openFile();
 };
 
 #endif // RESTOREMODELDIALOG_H

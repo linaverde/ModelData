@@ -21,5 +21,6 @@ private:
 private Q_SLOTS:
     void onModelGenClicked();
     void onDatabaseGenClicked();
+    void onRestoreClicked();
 };
 #endif // MAINWINDOW_H

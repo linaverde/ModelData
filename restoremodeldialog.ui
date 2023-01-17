@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>RestoreModelDialog</class>
  <widget class="QDialog" name="RestoreModelDialog">
@@ -5,13 +6,39 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>911</width>
+    <height>660</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Восстановление модели данных по выборке</string>
   </property>
+  <widget class="QPushButton" name="btnOpenFile">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Открыть файл</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelOpenedFile">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>20</y>
+     <width>591</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Файл  данных пока не выбран</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

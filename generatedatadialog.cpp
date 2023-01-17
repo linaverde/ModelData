@@ -290,7 +290,7 @@ void GenerateDataDialog::showModelData(){
 
 void GenerateDataDialog::jsonSchemaError(){
     QMessageBox messageBox;
-    messageBox.critical(0,"Ошибка","Невозможно прочитать файл - содержимое было повреждено и не соотвествует json-представлению модели");
+    messageBox.critical(0,"Ошибка","Невозможно прочитать файл - содержимое было повреждено или не соотвествует json-представлению модели");
     messageBox.setFixedSize(500,200);
     messageBox.show();
     return;
